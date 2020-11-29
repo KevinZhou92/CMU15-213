@@ -206,3 +206,19 @@ We take the same strategy, which is to examine the assembly code of `phase_4` an
 Solution is:
 > 7 0
 
+# phase_5
+## Solution
+We take the same strategy, which is to examine the assembly code of `phase_4` and `func4`, we found that the function is asking for two numbers. We also find out that the first number should be 7 so that we can pass `cmpl %edi, %ecx` in `func4`, and we also find out that the second parameter should be 0 so that we can pass `phase_4`.
+
+Solution is:
+> 9?>567
+
+# phase_6
+## Solution
+Solution is:
+> 4 3 2 1 6 5
+
+# 
+## Solution
+Solution is:
+> 22
