@@ -208,7 +208,7 @@ Solution is:
 
 # phase_5
 ## Solution
-We take the same strategy, which is to examine the assembly code of `phase_4` and `func4`, we found that the function is asking for two numbers. We also find out that the first number should be 7 so that we can pass `cmpl %edi, %ecx` in `func4`, and we also find out that the second parameter should be 0 so that we can pass `phase_4`.
+We take the same strategy, which is to examine the assembly code of `phase_5`, we found that `phase_5` is asking for six-char string. And we found that the remaining logic is like a decryption work, it take the low 4 bit value of a 8 bit hex value, then use the sum of this value and `0x4024b0` to get the required result, which is `flyers`. The string at `0x4024b0` is `maduiersnfotvbyl`. It turns out that we can have multiple answers here, as long as the hex values of the ending 4-bit are `9 f e 5 6 7`, we will be able to defuse the bomb.
 
 Solution is:
 > 9?>567
